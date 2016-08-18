@@ -3,7 +3,7 @@ IntervalTransactionStart = require '..'
 
 describe 'IntervalTransactionStart', ->
   beforeEach ->
-    @sut = new IntervalTransactionStart {transactionGroupId: 'some-transaction-id'}
+    @sut = new IntervalTransactionStart {transactionId: 'some-transaction-id'}
 
   it 'should exist', ->
     expect(@sut).to.be.an.instanceOf IntervalStart

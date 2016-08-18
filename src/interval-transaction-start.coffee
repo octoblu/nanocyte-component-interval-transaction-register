@@ -6,7 +6,7 @@ class IntervalTransactionStart extends IntervalStart
 
   onEnvelope: (envelope) =>
     response = super envelope
-    response.payload.transactionId = @metadata.transactionGroupId
+    response.payload.transactionId = @metadata.transactionId
 
     return response
 
